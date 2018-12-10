@@ -15,14 +15,13 @@ public class AppTest
      * Rigorous Test :-)
      */
     @Test
-    @Ignore
     public void test1()
     {
         Transform transform = new Transform();
         int[] a = {7, 8, 10, 12, 16, 4, 5, 2};
         int[] b = {5, 2};
 
-        Assert.assertEquals(b, transform.transform(a));
+        Assert.assertArrayEquals(b, transform.transform(a));
     }
 
     @Test
